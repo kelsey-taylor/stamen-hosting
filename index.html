@@ -8,25 +8,42 @@
 <!-- Color palette -->
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 
+<h1>Nicolette <> Stamen</h1>
+<h2>The first ten years</h2>
+
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
 
 <style>
 .node:hover{
-  stroke-width: 7px !important;
+  stroke-width: 2px !important;
   opacity: 1 !important;
 }
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20pt;
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-weight: 200;
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+}
 </style>
-
 
 <script>
 
 // set the dimensions and margins of the graph
-var width = 800
-var height = 400
+var width = 1100
+var height = 600
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
@@ -42,17 +59,17 @@ data = data.filter(function(d){ return d.value>4 })
   // A scale that gives a X target position for each group
   var x = d3.scaleOrdinal()
     .domain(["Operations", "Allstate", "Amazon", "Amazon Web Services", "American Red Cross", "Auxly", "BAAQMD", "Bill & Melinda Gates Foundation (BMGF)", "Cambridge Systematics", "CAST", "Cepheid", "Cleveland Metroparks", "Columbia University", "Consumer Reports", "CREATE.IO", "Daitem", "Digital Globe", "Earth Genome", "EIG Economic Innovation Group", "Ekman Group", "elsevier", "Exploratorium", "Gensler | Team Uplift", "Givaudan France", "Google", "Google Inc", "HERE", "HOODLINE", "HudHud", "J. Paul Getty Trust", "Johnson & Johnson", "Link Logistics", "Marketing", "Max Planck Institute", "Maxar", "MDRC", "Midwood", "Mirra VR / Kevin Farnham", "Movebank", "MPG Operations LLC", "MPG Ranch", "National Audubon Society", "National Geographic Partners LLC", "New Biz", "NY CITY", "People V Extinction", "Phylagen", "Placer.ai", "Planet Labs", "R&D", "REBNY", "Salesforce", "Science Museum", "Seattle Dept. of Energy and Env.", "Stanford University", "UC Berkeley", "UC Davis", "University of Richmond", "V AND A", "Virginia Commonwealth University", "Visa", "Washington DC - DOE", "WHO", "Windward Fund (was Otherlab)", "xSensor", "YBCA"])
-    .range([485, 104, 78, 101, 71, 141, 235, 323, 101, 515, 480, 395, 38, 248, 518, 62, 118, 439, 419, 184, 270, 21, 260, 426, 584, 474, 176, 200, 117, 287, 353, 274, 188, 369, 98, 526, 174, 337, 200, 226, 15, 289, 467, 21, 198, 525, 403, 412, 598, 586, 503, 517, 498, 443, 294, 116, 287, 150, 388, 1, 323, 447, 567, 73, 106, 329])
+    .range([483, 431, 28, 843, 256, 132, 805, 367, 394, 823, 608, 534, 865, 524, 795, 803, 178, 885, 697, 461, 362, 898, 519, 567, 325, 169, 618, 667, 424, 309, 428, 601, 83, 499, 888, 664, 386, 723, 507, 759, 535, 253, 878, 853, 158, 167, 324, 472, 816, 620, 435, 352, 759, 131, 262, 553, 683, 737, 486, 490, 649, 556, 527, 384, 870, 761])
 
   // Color palette for projtype?
   var color = d3.scaleOrdinal()
     .domain(["Operations", "Allstate", "Amazon", "Amazon Web Services", "American Red Cross", "Auxly", "BAAQMD", "Bill & Melinda Gates Foundation (BMGF)", "Cambridge Systematics", "CAST", "Cepheid", "Cleveland Metroparks", "Columbia University", "Consumer Reports", "CREATE.IO", "Daitem", "Digital Globe", "Earth Genome", "EIG Economic Innovation Group", "Ekman Group", "elsevier", "Exploratorium", "Gensler | Team Uplift", "Givaudan France", "Google", "Google Inc", "HERE", "HOODLINE", "HudHud", "J. Paul Getty Trust", "Johnson & Johnson", "Link Logistics", "Marketing", "Max Planck Institute", "Maxar", "MDRC", "Midwood", "Mirra VR / Kevin Farnham", "Movebank", "MPG Operations LLC", "MPG Ranch", "National Audubon Society", "National Geographic Partners LLC", "New Biz", "NY CITY", "People V Extinction", "Phylagen", "Placer.ai", "Planet Labs", "R&D", "REBNY", "Salesforce", "Science Museum", "Seattle Dept. of Energy and Env.", "Stanford University", "UC Berkeley", "UC Davis", "University of Richmond", "V AND A", "Virginia Commonwealth University", "Visa", "Washington DC - DOE", "WHO", "Windward Fund (was Otherlab)", "xSensor", "YBCA"])
-    .range(['#fff21c', '#9400d3', '#8840de', '#775ee8', '#5d77f3', '#2d8dfd', '#559efa', '#77aff4', '#91c1ee', '#a7d3e8', '#9cd2d1', '#84c9b5', '#6ac099', '#4cb77d', '#63bd6a', '#95d05c', '#c0e249', '#e8f42b', '#ffd534', '#ffb742', '#ff974b', '#ff7d4f', '#ff774d', '#ff704b', '#ff6949', '#ff674b', '#ff7f6b', '#ff958a', '#ffabaa', '#ffc0cb']);
+    .range(["#fff21c", "#9400d3", "#8840de", "#775ee8", "#5d77f3", "#2d8dfd", "#559efa", "#77aff4", "#91c1ee", "#a7d3e8", "#9cd2d1", "#84c9b5", "#6ac099", "#4cb77d", "#63bd6a", "#95d05c", "#c0e249", "#e8f42b", "#ffd534", "#ffb742", "#ff974b", "#ff7d4f", "#ff774d", "#ff704b", "#ff6949", "#ff674b", "#ff7f6b", "#ff958a", "#ffabaa", "#ffc0cb"]);
 
   // Size scale for project hours
   var size = d3.scaleLinear()
     .domain([5, 300, 1000, 4000])
-    .range([8, 30, 50, 90])
+    .range([12, 40, 60, 100])
 
   // create a tooltip
   var Tooltip = d3.select("#my_dataviz")
@@ -69,7 +86,7 @@ data = data.filter(function(d){ return d.value>4 })
   }
   var mousemove = function(d) {
     Tooltip
-      .html('<strong>' + d.client  + "<br>" + '</strong>' + d.key + "<br>" + d.value + " hours")
+      .html("<strong>" + d.client  + "<br>" + "</strong>" + d.key + "<br>" + d.value + " hours")
       .style("left", (d3.mouse(this)[0]+20) + "px")
       .style("top", (d3.mouse(this)[1]) + "px")
   }
@@ -109,7 +126,7 @@ var simulation = d3.forceSimulation()
     .force("collide", d3.forceCollide().strength(.5).radius(function(d){ return size(d.value)}).iterations(1)) // Force that avoids circle overlapping
 
   // Apply these forces to the nodes and update their positions.
-  // Once the force algorithm is happy with positions ('alpha' value is low enough), simulations will stop.
+  // Once the force algorithm is happy with positions ("alpha" value is low enough), simulations will stop.
   simulation
       .nodes(data)
       .on("tick", function(d){
