@@ -1,7 +1,7 @@
 projtype,client,key,value
-"Client","Allstate","DIGITAL SAFETY (T&M)","1300"
+Client,Allstate,DIGITAL SAFETY (T&M),1300
 Client,Allstate,DIGITAL SAFETY WEB POC (T&M) - August 2018+,400
-"Client","Allstate","BYOD","57.5"
+Client,Allstate,BYOD,57.5
 Client,Allstate,Allstate Dealer Services,28.75
 Client,Allstate,InfoArmor CES kiosk app,5.5
 Client,Allstate,InfoArmor demo app mods,0.5
@@ -113,35 +113,35 @@ Client,Max Planck Institute,Superdiversity 2023,0.75
 Client,Visa,Visa Innovation Center Singapore - Data visualization,0.5
 Client,HOODLINE,DATA JOURNALISM,0.5
 Client,American Red Cross,OPEN DRONE MAP,0.5
-Stamen,Operations,Internal / Studio / Misc,3974.2
-Stamen,Operations,Internal,838.75
-Stamen,Operations,Vacation Sick Time and Holidays,456
-Stamen,Operations,Past client/project support,9.75
-Stamen,Operations,IT / Misc Systems Admin,7.5
-Stamen,Operations,Technical Operations,1
-Stamen,Marketing,Marketing - general/ops,385.75
-Stamen,Marketing,Marketing,170.75
-Stamen,Marketing,Content dev / social marketing,100
-Stamen,Marketing,Stadia Tiles Migration,33.5
-Stamen,Marketing,Stamen Podcast,23
-Stamen,Marketing,Stamen website(s),15
-Stamen,Marketing,Stamen.com,11
-Stamen,Marketing,Website Update 2023,9
-Stamen,Marketing,Archiving 2023-24,5.75
-Stamen,Marketing,NACIS 2024,2.5
-Stamen,Marketing,NACIS 2023,2.5
-Stamen,Marketing,Events / speaking,2
-Stamen,Marketing,Content marketing,1
-Stamen,New Biz,Newbiz / prospecting,378.18
-Stamen,New Biz,Sales,268.25
-Stamen,R&D,Stamen Stories (March 2021 - June 2021),171
-Stamen,R&D,Stamen Summit 2021,54.5
-Stamen,R&D,Brass Tacks (Ritualizing Transparency and Learnings),16.83
-Stamen,R&D,Stamen Programs (What programs do we offer to different types of clients?),13
-Stamen,R&D,INTERNAL MEETINGS,12.5
-Stamen,R&D,DCB Total Business Reset,11.5
-Stamen,R&D,INTERNAL / PRO BONO,6
-Stamen,R&D,National Design Awards,4
-Stamen,R&D,Project Success Super Team (What is needed for a successful project?),3
-Stamen,R&D,AoE 1 pager,2.25
-Stamen,R&D,Stamen is Ship of Theseus (How do we define Stamen?),2
+Stamen,Stamen Operations,Internal / Studio / Misc,3974.2
+Stamen,Stamen Operations,Internal,838.75
+Stamen,Stamen Operations,Vacation Sick Time and Holidays,456
+Stamen,Stamen Operations,Past client/project support,9.75
+Stamen,Stamen Operations,IT / Misc Systems Admin,7.5
+Stamen,Stamen Operations,Technical Operations,1
+Stamen,Stamen Marketing,Marketing - general/ops,385.75
+Stamen,Stamen Marketing,Marketing,170.75
+Stamen,Stamen Marketing,Content dev / social marketing,100
+Stamen,Stamen Marketing,Stadia Tiles Migration,33.5
+Stamen,Stamen Marketing,Stamen Podcast,23
+Stamen,Stamen Marketing,Stamen website(s),15
+Stamen,Stamen Marketing,Stamen.com,11
+Stamen,Stamen Marketing,Website Update 2023,9
+Stamen,Stamen Marketing,Archiving 2023-24,5.75
+Stamen,Stamen Marketing,NACIS 2024,2.5
+Stamen,Stamen Marketing,NACIS 2023,2.5
+Stamen,Stamen Marketing,Events / speaking,2
+Stamen,Stamen Marketing,Content marketing,1
+Stamen,Stamen New Biz,Newbiz / prospecting,378.18
+Stamen,Stamen New Biz,Sales,268.25
+Stamen,Stamen R&D,Stamen Stories (March 2021 - June 2021),171
+Stamen,Stamen R&D,Stamen Summit 2021,54.5
+Stamen,Stamen R&D,Brass Tacks (Ritualizing Transparency and Learnings),16.83
+Stamen,Stamen R&D,Stamen Programs (What programs do we offer to different types of clients?),13
+Stamen,Stamen R&D,INTERNAL MEETINGS,12.5
+Stamen,Stamen R&D,DCB Total Business Reset,11.5
+Stamen,Stamen R&D,INTERNAL / PRO BONO,6
+Stamen,Stamen R&D,National Design Awards,4
+Stamen,Stamen R&D,Project Success Super Team (What is needed for a successful project?),3
+Stamen,Stamen R&D,AoE 1 pager,2.25
+Stamen,Stamen R&D,Stamen is Ship of Theseus (How do we define Stamen?),2
