@@ -35,7 +35,7 @@ var svg = d3.select("#my_dataviz")
     .attr("height", height)
 
 // Read data
-d3.csv("https://raw.githubusercontent.com/kelsey-taylor/stamen-hosting/refs/heads/main/nico-harvest-data.csv?token=GHSAT0AAAAAAC44MOYVV7LCKLRPSIT4Q7JGZ75MCPQ", function(data) {
+d3.csv("https://raw.githubusercontent.com/kelsey-taylor/stamen-hosting/refs/heads/main/nico-harvest-data.csv", function(data) {
 
 data = data.filter(function(d){ return d.value>4 })
 
